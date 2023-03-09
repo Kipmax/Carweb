@@ -1,0 +1,335 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+}
+/**this is the navigation bar**/
+nav{
+	background: #000000;
+	padding: 10px 40px 10px 50px;
+	border: 1px solid black;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+/**for the logo**/
+nav ul li.logo{
+	flex: 1;
+	font-size: 30px;
+	font-weight: 700;
+	color: red;
+	text-align: left;
+}
+
+nav ul div.bar {
+	padding: 0 25px;
+	display: inline-flex;
+}
+nav ul div.bar a{
+	text-decoration: none;
+	font-size: 18px;
+	padding: 0 12px;
+}
+nav ul div.bar a:hover{
+	background: red;
+	border-radius: 10px;
+	color: black;
+}
+
+/*for the search button*/
+nav ul li.search{
+	background: #cornflowerblue;
+	width: 240px;
+	height: 30px;
+	display: flex;
+	border-radius: 5px;
+
+}
+nav ul li.search input{
+	height: 100%;
+	width: 200px;
+	border: none;
+	outline: none;
+	border-radius: 5px 0 0 5px;
+	padding: 0 10 px;
+	color: rgb(12, 26, 45);
+	font-size: 16px;
+}
+nav ul li.search .icon{
+	height: 100%;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #E0E0E0;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #blue;
+	margin: auto;
+}
+nav ul li.search .icon:hover{
+	background: red;
+}
+.icon span{
+	color:black;
+	font-size: 18px;
+	text-align: center;
+	
+}
+/**for the responsive platforms**/
+@media screen and (max-width: 941px){
+	nav ul li.logo{
+		padding: 10px 40px 10px 0px;
+	}
+	nav ul li.logo{
+		display: none;
+	}
+	nav ul div.bar{
+		flex: 5;
+		padding-left:0px ;
+	}
+
+}
+@media screen and (min-width: 941px){
+	nav ul li.btn{
+		display: none;
+	}
+}
+
+/**contacts page**/
+.cover{
+    background-image: url("nissan/gtr1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+}
+.reach h1{
+	text-align: center;
+}
+.reach ul li i{
+	color: black;
+}
+.reach ul li i:hover{
+	color: white;
+
+}
+.reach{
+    background-color: rgba(236, 243, 249, 0.25);
+    border: 0px solid;
+    color: black;
+    height: auto;
+    width: auto;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    position: absolute;
+    z-index: -3px;
+    border-radius: 30px;
+}
+.reach ul{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+
+}
+.reach ul li{
+   list-style: none;
+   margin: 0 35px;
+
+
+
+}
+.reach ul li a{
+    font-size: 35px;
+    line-height: 60px;
+    transition: .3s;
+    color:black;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    background-color: white ;
+    text-align: center;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0.5);
+
+}
+.reach ul li a:hover{
+    color: white;
+    transform: translate(0,-10%);
+}
+.reach ul li:nth-child(1) a:hover{
+    background-color: #3b5998;
+
+}
+.reach ul li:nth-child(2) a:hover{
+    background-color: #128C7E;
+
+}
+.reach ul li:nth-child(3) a:hover{
+    background-color: #E1306C;
+
+}
+.reach ul li:nth-child(4) a:hover{
+    background-color: black;
+
+}
+.reach ul li:nth-child(5) a:hover{
+    background-color: #1DA1F2;
+
+}
+/*about page*/
+.holder{
+	background-color: black;
+	height: 100vh;
+}
+.portion2 img{
+	position: relative;
+	width:100px;
+	height: fit-content;
+}
+.service h1 {
+	text-align: center;
+	color:white ;
+}
+
+.pharagraph {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	color: white;
+	
+}
+.pharagraph p {
+	margin: 20px;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+}
+/****slider****/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	
+}
+.thecontainer{
+	position: relative;
+
+}
+ .slide{
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+ .slide-container .slide video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	animation: fadein 4s linear;
+
+}
+
+@keyframes fadein{
+	0%{ 
+		transform: scale(1.5);
+	}
+}
+.slide .content{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+
+}
+.content h3{
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	animation:animate .4s linear .4s backwards;
+}
+.content p{
+	font-size: 24px;
+	color: white;
+	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	animation:animate .4s linear .6s backwards;
+}
+.content .btn{
+	display: inline-block;
+	padding: 9px 30px;
+	background: white;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	color: black;
+	font-size: 17px;
+	margin-top: 10px;
+	transition: 2s linear;
+	animation:animate .4s linear 1s backwards;
+
+}
+ .content .btn:hover{
+	letter-spacing: 2px;
+	color: red;
+}
+
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: scale(.5) translateY(-50px);
+	}
+}
+.slide-container{
+	display: none;
+}
+.active{
+	display: block;
+
+}
+/**for prev and next**/
+.thecontainer #next,
+.thecontainer #prev{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50px);
+	z-index: 100;
+	background: white;
+	color: grey;
+	font-weight: bold;
+	height: 60px ;
+	width:50px;
+	line-height: 55px;
+	font-size: 20px;
+	cursor:pointer;
+	text-align: center;
+	border-radius: 50%;
+} 
+.thecontainer #next{
+	right: 0
+}
+.thecontainer #prev{
+	left: 0
+}
